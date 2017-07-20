@@ -21,7 +21,7 @@ fhBuildNode(['label': 'nodejs']) {
     stage('Build') {
         gruntBuild {
             name = 'fh-template-apps'
-            distCmd = 'default'
+            distCmd = 'default --verbose'
         }
     }
 }
